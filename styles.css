@@ -1,0 +1,867 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 40px;
+}
+
+/* GENERAL PPTES */
+*{
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+    
+
+/* Header Estilos */
+
+@media (min-width: 800px) {
+
+    .input-checkbox {
+        display: none;
+    }
+    .iconos-header {
+         display: none;
+    }
+    .add-to-cart img{
+        display: none;
+    }
+    .nav_label {
+        display: none;
+    }
+    .nav_drop{
+        display: none;
+    }
+
+    header {
+    display: flex;
+    flex: row;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: rgba(255, 255, 255);
+    filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
+    z-index: 100;
+    font-family: "inter";
+}
+
+
+/* Montreal LOGO */
+header img {
+    padding-left: 5rem;
+    padding-top: 5px;
+    height: 6vh;
+}
+
+/* links del header */
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    color: #3C3C3C;
+    margin: 0 22px;
+}
+
+.navbar li{
+    scroll-behavior: smooth;
+}
+
+/* Iconos header */
+
+.iconos-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.login-box {
+    margin-top: 13px;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(75, 75, 75);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.login-box li {
+    text-align: center;
+    padding: 12px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.login img {
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.input-user:checked ~ .login-box  {
+    display: grid;
+}
+
+.input-user {
+    display: none;
+}
+
+.login-box {
+    display: none;
+}
+
+#ico-fav {
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+/*---------Shop cart------ */
+
+.shop-list {
+    display: none;
+}
+
+.input-shop {
+    display: none;
+}
+
+.input-shop:checked ~ .shop-list {
+    display: flex;
+}
+
+.shop-list {
+    top: 78px;
+    right: 1rem;
+    flex-direction: column;
+    position: absolute;
+    width: 400px;
+    height: fit-content;
+    padding-bottom: 20px;
+    background-color: rgb(75, 75, 75);
+    overflow: hidden;
+    border-radius: 0px 0px 5px 5px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    gap: 20px;
+}
+
+.card-shop-list {
+    top: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    height: 6rem;
+    border: 5px solid white;
+    width: 22rem;
+    border-radius: 5px;
+    background-color: white;
+    text-align: left;
+}
+
+.card-shop-list img {
+    height: 6rem;
+    padding: 1px;
+}
+
+.card-shop-list button {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: none;
+}
+
+.card-shop-list button:hover {
+    border: 4px solid rgb(98, 156, 255);
+}
+
+.shop-cart-actions {
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    height: 5em;
+    gap: 10px;
+    text-align: center;
+    flex-direction: column;
+}
+
+#remove-item {
+    margin-top: 1px;
+    text-decoration: none;
+    color: red;
+}
+
+#shop-1-ico {
+    height: 30px;
+}
+
+#ico-shop {
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.shop-total-items {
+    top: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    height: 4rem;
+    border: 5px solid white;
+    width: 22rem;
+    border-radius: 5px;
+    background-color: white;
+    text-align: left;
+}
+
+}
+
+/* ------------------------------------------------- */
+
+/* Hero */
+
+.Hero-section {
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
+    width: 100%;
+    justify-content: center;
+    min-width: 75%;
+}
+
+.hero-title {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    position: absolute;
+    margin-left: 3rem;
+}
+
+.type-effect {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgb(57, 57, 57);
+    width: 15rem;
+    height: 5rem;
+}
+
+.type-effect h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif; 
+    width: 10rem;
+}
+
+.hero-img {
+    z-index: -2;
+    height: 30rem;
+    width: 100%;
+    background-image: url(./Assets/Banner/Banner-bg-2.jpg);
+    background-size: cover;
+    position: static;
+    border-radius: 5px;
+    margin-top: 100px;
+    background-position-y: -300px;
+}
+
+@media (max-width: 1366px) {
+
+    .hero-img {
+        z-index: -2;
+        height: 30rem;
+        width: 100%;
+        background-image: url(./Assets/Banner/Banner-bg-2.jpg);
+        background-size: cover;
+        position: static;
+        border-radius: 5px;
+        margin-top: 100px;
+        background-position-y: -150px;
+}
+}
+
+/* Products Filters */
+.filter h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.box-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    height: 250px;
+    width: 100%;
+    min-width: 75%;
+    color: #000000;
+}
+
+.box-filter h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.filter-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filter-card img {
+    height: 180px;
+}
+
+.filter-card p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+/* BOXES-SHOP */
+
+.boxes-shop {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 380px);
+    width: 100%;
+    height: 180vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1366px) {
+    .boxes-shop {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        grid-template-columns: repeat(4, 310px);
+        padding-bottom: 20px;
+    } 
+}
+
+.caja-shop {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    width: 305px;
+    height: 500px;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 0, 0);
+    backdrop-filter: blur(75px);
+    -webkit-backdrop-filter: blur(50px);
+
+}
+
+.caja-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-categories span {
+    border-radius: 5px;
+    border-width: 1.2px;
+    color: #000000;
+    min-width: 5rem;
+    width: fit-content;
+    max-height: none;
+    height: 1.2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+.box-shop-imagen {
+    width: 300px;
+    height: 330px;
+}
+
+.box-shop-imagen img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.caja-title {
+    margin-top: 0.5rem;
+    flex-direction: column;
+    color: rgb(22, 22, 22);
+}
+
+.caja-title h2 {
+    font-weight: 800;
+    font-size: 18px;
+    font-family: 'inter', sans-serif;
+    text-align: center;
+
+}
+
+.caja-title p {
+    font-size: 14px;
+    font-style: oblique;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.add-to-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.add-to-cart button {
+    font-size: 15px;
+    font-weight: 600;
+    height: 3rem;
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+    color: #ffffff;
+    background-color: rgb(75, 75, 75);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Box Marcas */
+
+.cards-brands {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    height: 350px;
+    width: 100%;
+    min-width: 75%;
+    background-color: rgb(57, 57, 57); 
+}
+
+.cards-brands img {
+    height: 150px;
+}
+
+/*  BOX REVIEWS GRAL */
+
+.title-compromise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.box-reviews {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    min-width: 75%;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Boxes de Reviews */
+
+.review_1 {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20rem;
+    height: 16rem;
+}
+
+.review_1 img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.review_1 h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.review_1 p {
+    text-align: center;
+}
+
+/* Contacto */
+
+.box-contacto-gral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 450px;
+    width: 100%;
+    min-width: 75%;
+    background-color: rgb(57, 57, 57);
+    margin-top: 10px;
+    justify-content: space-around;
+    color: #F5F5F5;
+}
+
+/* Optica montreal info */
+
+.review_place {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 20rem;
+    text-align: left;
+    justify-content: center;
+    padding: 1rem;
+}
+.review_place h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.review_place p {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    color: #F5F5F5;
+    position: static;
+    margin-top: 1rem;
+}
+
+/* Metodos de pago */
+
+.pay-method {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pay-method h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+/* ----Boxes de contacto---- */
+
+.boxes-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+    gap: 20px;
+    margin-right: 5rem;
+}
+
+.boxes-contacto p {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Contacto nombre */
+
+.box-name {
+    text-align: left;
+    align-items: center;
+    height: 40px;
+    width: 250px;
+    color: #F5F5F5;
+}
+
+.box-name label {
+    font-size: 15px;
+}
+
+.box-name input {
+    border-radius: 3px;
+    height: 25px;
+    width: 100%;
+    text-align: left;
+    align-content: center;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Contacto email*/
+
+.box-email {
+    text-align: left;
+    align-items: center;
+    height: 40px;
+    width: 250px;
+    color: #F5F5F5;
+}
+
+.box-email label {
+    font-size: 15px;
+}
+
+.box-email input {
+    border-radius: 3px;
+    height: 25px;
+    width: 250px;
+    text-align: left;
+    align-content: center;
+    border: none;
+}
+
+/* Contacto telefono */
+
+.box-phone {
+    text-align: left;
+    align-items: center;
+    height: 40px;
+    width: 250px;
+    color: #F5F5F5;
+}
+
+.box-phone label {
+    font-size: 15px;
+}
+
+.box-phone input {
+    border-radius: 3px;
+    height: 25px;
+    width: 250px;
+    text-align: left;
+    align-content: center;
+    border: none;
+}
+
+/* Contacto Mensaje*/
+
+.box-mensaje {
+    text-align: left;
+    align-items: center;
+    height: 40px;
+    width: 250px;
+}
+
+.box-mensaje label {
+    font-size: 15px;
+    color: #F5F5F5;
+}
+
+.box-mensaje input {
+    border-radius: 3px;
+    height: 60px;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.button-send-info {
+    margin-top: 3rem;
+}
+
+.button-send-info button {
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color:  #242325;;
+}
+
+/* Media queries escritorio */
+
+@media (max-width: 1366px) {
+    
+    .box-contacto-gral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        min-width: 75%;
+        background-color: rgb(57, 57, 57);
+        margin-top: 10px;
+        justify-content: space-around;
+        color: #F5F5F5;
+        padding-bottom: 20px;
+    }
+
+
+    .pay-method {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pay-method img {
+        width: 850px;
+    }
+
+    .boxes-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        gap: 0;
+    }
+
+    .boxes-contacto p {
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .mediaqueries-mobile-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+    
+    .mediaqueries-mobile-contact img {
+        height: 20px;
+        margin-bottom: -18px;
+    }
+    
+        .box-name {
+            display: none;
+        }
+        .box-email {
+            display: none;
+        }
+        .box-phone {
+            display: none;
+        }
+        .box-mensaje {
+            display: none;
+        }
+        .button-send-info {
+            display: none;
+        }
+}
+
+@media (min-width: 1367px) {
+    .mediaqueries-mobile-contact {
+        display: none;
+    }
+}
+
+/* Google maps */
+
+.mapouter {
+    display: flex;
+    align-items: center;
+}
+
+/* ------Footer------- */
+
+.box-footer {
+    display: flex;
+    align-items: center;
+    background-color: #242325;
+    height: 300px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'inter', sans-serif;
+}
+
+.box-footer-text-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    text-align: left;
+    width: 200px;
+}
+
+.box-footer-text-1 span {
+    font-weight: 800;
+    color: #F1F2EB;
+}
+
+.box-footer-text-1 a {
+    color: #F1F2EB;
+}
+
+/* Social media boxes */
+
+.box-social-media {
+    text-align: center;
+    width: 20rem;
+}
+
+.box-social-media img {
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.box-social-media h3 {
+    color: #F5F5F5;
+    font-weight: 400;
+}
+
+/* Title Creator */
+
+.title-creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    background-color: #363636;
+}
+
+.title-creator h3 {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    color: #F5F5F5;
+}
+

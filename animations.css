@@ -1,0 +1,38 @@
+/* Hero title Shop now */
+
+.type-effect h1 {
+  width: 9ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  40% {
+    border-color: transparent
+  }
+}
+
+ /* ------------- Cajas de shop ----------------*/
+
+ .caja-shop:hover {
+  cursor: pointer;
+  color: #ffffff;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgb(255,255,255);
+  background: linear-gradient( 160deg, rgba(255,255,255,0) 75%, rgba(98,156,255,1) 100%); 
+}
+
+
+.add-to-cart button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
