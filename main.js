@@ -2,14 +2,7 @@
 
 const productos_anteojos = [
     {
-        Id: 1,
-        nombre: "Polaroid Ibiza",
-        Precio: "33.000",
-        Categoria: "Sol",
-    },
-
-    {
-        Id: 2,
+        Id: "ant-100",
         nombre: "Polaroid Ibiza",
         Precio: "33.000",
         Categoria: "Sol",
