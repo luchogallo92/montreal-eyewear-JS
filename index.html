@@ -27,7 +27,7 @@
 
 <!-- Section Header -->
 <header>
-    <img src="./Assets/Logo/Logo-ppal.png" alt="">
+    <img src="./Assets/Logo/Logo-ppal.png" alt="" id="logo-mobile">
     
     <label for="menu-toggle" class="nav_drop">
     <img src="./Assets/Iconos/menu.png" alt="" class="nav_label">
@@ -40,9 +40,11 @@
          <ul class="navbar">
             <li><a href="./index.html">Home</a></li>
             <li><a href="#2">Catalogo</a></li>
-            <li><a href="#3">Marcas</a></li>
-            <li><a href="#4">Servicios</a></li>
-            <li><a href="#5">Sobre nosotros</a></li>
+            <li><a href="#3">Accesorios</a></li>
+            <li><a href="#4">Marcas</a></li>
+            <li><a href="#5">Servicios</a></li>
+            <li><a href="#6">Sobre nosotros</a></li>
+            <li><a href="#7">Articulos</a></li>
         </ul>
     </div>
 
@@ -59,9 +61,7 @@
             <li><a href="./login.html">Iniciar sesion</a></li>
             <li><a href="./register.html">Registrarme</a></li>  
         </div>
-    </div>
-
-        
+        </div>  
 
         <div class="favourites">
             <a href=""><img src="./Assets/Iconos/fav.png" alt="" id="ico-fav"></a>
@@ -113,6 +113,12 @@
                 </div>
             </div>
         </div>
+
+        <div class="darkmode">
+            <input type="checkbox" id="darkmode" class="input-dark">
+            <label for="darkmode"><img src="./Assets/Iconos/darkmode.png" alt="" id="ico-dark">
+            </label>
+        </div>
     </div>
 </header>
 
@@ -135,7 +141,7 @@
         
 
 <!-- Products Title -->
-<section class="filter" id="2">
+<section class="filter" id="3">
     <h2>Nuestros productos</h2>
 
     <div class="box-filter">
@@ -366,11 +372,62 @@
         </div>
     </div>
 
+    <div class="caja-shop">
+        <div class="box-shop-imagen">
+        <img src="./Assets/Anteojos/RUNET.png" alt="">
+    </div>
+        <div class="caja-title">
+            <h2>Modelo Rust Runet</h2>
+            <p>Precio: $39.000</p>
+        </div>
+        <div class="caja-categories">
+            <span>Lentes de Mascara</span>
+        </div>
+        <div class="add-to-cart">
+            <img src="./Assets/Iconos/shop.png" alt="">
+            <button>Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="caja-shop">
+        <div class="box-shop-imagen">
+        <img src="./Assets/Anteojos/RUNET.png" alt="">
+    </div>
+        <div class="caja-title">
+            <h2>Modelo Rust Runet</h2>
+            <p>Precio: $39.000</p>
+        </div>
+        <div class="caja-categories">
+            <span>Lentes de Mascara</span>
+        </div>
+        <div class="add-to-cart">
+            <img src="./Assets/Iconos/shop.png" alt="">
+            <button>Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="caja-shop">
+        <div class="box-shop-imagen">
+        <img src="./Assets/Anteojos/RUNET.png" alt="">
+    </div>
+        <div class="caja-title">
+            <h2>Modelo Rust Runet</h2>
+            <p>Precio: $39.000</p>
+        </div>
+        <div class="caja-categories">
+            <span>Lentes de Mascara</span>
+        </div>
+        <div class="add-to-cart">
+            <img src="./Assets/Iconos/shop.png" alt="">
+            <button>Agregar al carrito</button>
+        </div>
+    </div>
+
 </section>
 
 <!-- Brands Title -->
 
-<section class="cards-brands" id="3">
+<section class="cards-brands" id="4">
         <img src="./Assets/Marcas/Lac-01.svg" alt="">
         <img src="./Assets/Marcas/cel-02.svg" alt="">
         <img src="./Assets/Marcas/rayban-03.svg" alt="">
@@ -381,7 +438,7 @@
 
 <!-- Services Boxes -->
 
-<div class="title-compromise" id="4">
+<div class="title-compromise" id="5">
     <h2>Comprometidos con tu Vision</h2>
 </div>
 
@@ -419,7 +476,7 @@
 
    <!----- Contacto ----->
    
- <section class="box-contacto-gral" id="5">
+ <section class="box-contacto-gral" id="6">
         
     <div class="review_place">
         <h3>Optica Montreal</h3>
@@ -442,42 +499,42 @@
             <img src="./Assets/Iconos/mail-white.svg" alt="">
             <span>opticamontreal.ba@gmail.com</span>
         </div>
-
-        <div class="box-name">
-        <label for="1">Nombre y Apellido</label>
-        <input type="text" id="1">
-        </div>
-    
-        <div class="box-email">
-        <label for="2">Correo electronico</label>
-        <input type="email" id="2">
-        </div>
-
-        <div class="box-phone">
-        <label for="3">Telefono de contacto</label>
-        <input type="tel" id="3">
-        </div>
-
-        <div class="box-mensaje">
-        <label for="4">Mensaje</label>
-        <input type="text" id="4">
-        </div>
-
-        <div class="button-send-info">
-        <button>Enviar</button>
-        </div>
-        
-    </div>
     
 </section>
 
 <!-- Google maps location -->
 <section class="mapouter">
         <div class="gmap_canvas">
-            <iframe width="1900px" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=optica tankel&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
+            <iframe width="1910" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=optica tankel&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
             <a href="https://2yu.co"></a>
             <a href="https://embedgooglemap.2yu.co/"></a>
         </div>
+</section>
+
+<!-- Informes-->
+
+<section class="articulos" id="7">
+
+    <div id="cards-articulos">
+        <img src="https://img.freepik.com/fotos-premium/mujer-joven-poniendose-lentes-contacto-seleccion-concepto-lentes-contacto_151013-25354.jpg" alt="">
+        <a href="https://www.acuvue.com.ar/uso-de-lentes/cuidado-limpieza-lentes-de-contacto" target="_blank"><p>Cuidados y Limpieza de lentes de contacto</p></a>
+    </div>
+
+    <div id="cards-articulos">
+        <img src="https://cdn.shopify.com/s/files/1/0031/1817/0157/files/Blog_septiembre_1-01.jpg?v=1569001986" alt="" >
+        <a href="https://www.acuvue.com.ar/uso-de-lentes/cuidado-limpieza-lentes-de-contacto" target="_blank"><p>Limpieza y Cuidados de tus gafas</p></a>
+    </div>
+
+    <div  id="cards-articulos">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSljyRb47ozs2t7lhIdRX3Ia4QwZd0ccYz5Cw&usqp=CAU" alt="">
+        <a href="https://admiravision.es/tests-medicion-agudeza-visual/" target="_blank"><p>Test de agudeza visual</p></a>
+    </div>
+
+    <div  id="cards-articulos">
+        <img src="https://scontent.faep39-1.fna.fbcdn.net/v/t1.6435-9/118323602_119757816501986_3917226737149207058_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=XEkGPs43gkMAX-T9KRi&_nc_ht=scontent.faep39-1.fna&oh=00_AfDzwThB2BfhA6IcXoJQcnybdspT5LHIHwkyyPAnJcMVrA&oe=64B985AF" alt="">
+        <a href="https://www.acuvue.com.ar/uso-de-lentes/cuidado-limpieza-lentes-de-contacto" target="_blank"><p>Ventajas de los lentes Blue Light</p></a>
+    </div>
+
 </section>
 
 <!-- Seccion footer -->
@@ -509,7 +566,7 @@
     </div>
 
     <div class="title-creator">
-        <h3>Hecho por Luciano Gallo para Nucba❤️</h3>
+        <h3>Optica Montreal Eyewear</h3>
     </div>
 </footer>
 
