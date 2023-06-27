@@ -21,6 +21,21 @@ body {
 
 /* Header Estilos */
 
+header {
+    display: flex;
+    flex: row;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: rgba(255, 255, 255);
+    filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
+    z-index: 100;
+    font-family: "inter";
+}
+
+
 @media (min-width: 800px) {
 
     .input-checkbox {
@@ -39,19 +54,7 @@ body {
         display: none;
     }
 
-    header {
-    display: flex;
-    flex: row;
-    width: 100%;
-    height: 80px;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    background: rgba(255, 255, 255);
-    filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
-    z-index: 100;
-    font-family: "inter";
-}
+ 
 
 
 /* Montreal LOGO */
@@ -240,6 +243,7 @@ header img {
 }
 }
 
+
 /* Dark mode JS */
 
 .darkmode input {
@@ -294,9 +298,27 @@ header img {
     background-image: url(./Assets/Banner/Banner-bg-2.jpg);
     background-size: cover;
     position: static;
-    border-radius: 5px;
     margin-top: 100px;
     background-position-y: -300px;
+    filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
+}
+
+/* Media queries desktop */
+@media (max-width: 1440px) {
+
+    .hero-img {
+        z-index: -2;
+        height: 30rem;
+        width: 100%;
+        background-image: url(./Assets/Banner/Banner-bg-2.jpg);
+        background-size: cover;
+        position: static;
+        margin-top: 100px;
+        background-position-y: -150px;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
+}
+
 }
 
 @media (max-width: 1366px) {
@@ -308,11 +330,30 @@ header img {
         background-image: url(./Assets/Banner/Banner-bg-2.jpg);
         background-size: cover;
         position: static;
-        border-radius: 5px;
         margin-top: 100px;
         background-position-y: -150px;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
+    }
 }
+
+@media (max-width: 1024px) {
+
+    .hero-img {
+        z-index: -2;
+        height: 30rem;
+        width: 100%;
+        background-image: url(./Assets/Banner/Banner-bg-2.jpg);
+        background-size: cover;
+        position: static;
+        margin-top: 100px;
+        background-position-y: -70px;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
+    }
 }
+
+/* -------------------------- */
 
 /* Products Filters */
 .filter h2 {
@@ -370,7 +411,18 @@ header img {
     padding-bottom: 20px;
 }
 
+/* Media queries Desktop */
 
+@media (max-width: 1440px) {
+    .boxes-shop {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        grid-template-columns: repeat(4, 310px);
+        
+    } 
+}
 @media (max-width: 1366px) {
     .boxes-shop {
         margin: 0 auto;
@@ -381,6 +433,18 @@ header img {
         
     } 
 }
+@media (max-width: 1024px) {
+    .boxes-shop {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        grid-template-columns: repeat(3, 310px);
+        
+    } 
+}
+
+/* ------------------------------ */
 
 .caja-shop {
     display: flex;
@@ -493,6 +557,13 @@ header img {
 .cards-brands img {
     height: 150px;
 }
+
+
+@media (max-width: 1024px) {
+   .cards-brands img {
+        height: 130px;
+    }  
+} 
 
 /*  BOX REVIEWS GRAL */
 
@@ -616,28 +687,88 @@ header img {
     margin-right: 5rem;
 }
 
-    .boxes-contacto p {
-        text-align: center;
-        justify-content: center;
-        padding: 0;
-        font-size: 2rem;
-        font-weight: 500;
-    }
+.boxes-contacto p {
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
 
-    .mediaqueries-mobile-contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: auto;
-        gap: 30px;
-    }
+.mediaqueries-mobile-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+}
     
-    .mediaqueries-mobile-contact img {
-        height: 35px;
-        margin-bottom: -20px;
-    }
+.mediaqueries-mobile-contact img {
+    height: 35px;
+    margin-bottom: -20px;
+}
+
+@media (max-width: 1440px) {
+    
+        .box-contacto-gral {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            min-width: 75%;
+            background-color: rgb(57, 57, 57);
+            margin-top: 10px;
+            justify-content: space-around;
+            color: #F5F5F5;
+            padding-bottom: 20px;
+        }
+    
+    
+        .pay-method {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .pay-method img {
+            width: 850px;
+        }
+    
+        .boxes-contacto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            gap: 0;
+        }
+    
+        .boxes-contacto p {
+            text-align: center;
+            justify-content: center;
+            padding: 0;
+        }
+    
+        .mediaqueries-mobile-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: auto;
+            gap: 20px;
+        }
+        
+        .mediaqueries-mobile-contact img {
+            height: 20px;
+            margin-bottom: -18px;
+        }
+}
 
 @media (max-width: 1366px) {
     
