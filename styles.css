@@ -36,6 +36,56 @@ header {
 }
 
 
+@media (max-width: 1280px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 3.5rem;
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        background-color: #ffffff;
+        filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
+        z-index: 100;
+        font-family: "inter";
+    }
+
+    header img {
+        padding-left: 10px;
+        height: 30px;
+    }
+
+    .iconos-header {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    #logo-mobile {
+        display: none;
+    }
+
+    #ico-login {
+        height: 25px;
+    }
+
+    #ico-fav {
+        height: 25px;
+    }
+
+    #ico-shop {
+        height: 25px;
+    }
+
+    #ico-dark {
+        height: 40px;
+    }
+}
+
 @media (min-width: 800px) {
 
     .input-checkbox {
@@ -44,9 +94,7 @@ header {
     .iconos-header {
          display: none;
     }
-    .add-to-cart img{
-        display: none;
-    }
+
     .nav_label {
         display: none;
     }
@@ -244,6 +292,8 @@ header img {
 }
 
 
+
+
 /* Dark mode JS */
 
 .darkmode input {
@@ -298,7 +348,7 @@ header img {
     background-image: url(./Assets/Banner/Banner-bg-2.jpg);
     background-size: cover;
     position: static;
-    margin-top: 100px;
+    margin-top: 80px;
     background-position-y: -300px;
     filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
 }
@@ -313,7 +363,7 @@ header img {
         background-image: url(./Assets/Banner/Banner-bg-2.jpg);
         background-size: cover;
         position: static;
-        margin-top: 100px;
+        margin-top: 80px;
         background-position-y: -150px;
         background-repeat: no-repeat;
         filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
@@ -330,7 +380,7 @@ header img {
         background-image: url(./Assets/Banner/Banner-bg-2.jpg);
         background-size: cover;
         position: static;
-        margin-top: 100px;
+        margin-top: 80px;
         background-position-y: -150px;
         background-repeat: no-repeat;
         filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
@@ -346,7 +396,7 @@ header img {
         background-image: url(./Assets/Banner/Banner-bg-2.jpg);
         background-size: cover;
         position: static;
-        margin-top: 100px;
+        margin-top: 80px;
         background-position-y: -70px;
         background-repeat: no-repeat;
         filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
@@ -356,46 +406,34 @@ header img {
 /* -------------------------- */
 
 /* Products Filters */
-.filter h2 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-}
-
-.box-filter {
+.filter {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
-    margin: 0 auto;
-    height: 250px;
+    height: 8rem;
     width: 100%;
-    min-width: 75%;
-    color: #000000;
-}
-
-.box-filter h2 {
-    font-size: 30px;
-    font-weight: 800;
-}
-
-.filter-card {
-    display: flex;
-    flex-direction: column;
+    background-color:#3C3C3C;
+    margin-bottom: 20px;
     align-items: center;
-    justify-content: space-around;
+    filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
 }
 
-.filter-card img {
-    height: 180px;
-}
-
-.filter-card p {
-    text-align: center;
+.filter button {
+    height: 2rem;
+    width: 8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #5d2fdf;
+    color: white;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    margin-top: -5px;
+}
+
+.filter button:hover{
+    background-color: #5526c5;
+}
+
+.filter button:focus {
+    box-shadow: 0 0 0 3px #8659e9;
 }
 
 /* BOXES-SHOP */
@@ -405,6 +443,7 @@ header img {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(5, 350px);
+    gap: 20px;
     width: 100%;
     height: auto;
     justify-content: center;
@@ -420,17 +459,25 @@ header img {
         height: auto;
         gap: 20px;
         grid-template-columns: repeat(4, 310px);
-        
     } 
 }
+
 @media (max-width: 1366px) {
     .boxes-shop {
         margin: 0 auto;
         width: 100%;
         height: auto;
         gap: 20px;
-        grid-template-columns: repeat(4, 310px);
-        
+        grid-template-columns: repeat(4, 310px); 
+    } 
+}
+@media (max-width: 1280px) {
+    .boxes-shop {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        grid-template-columns: repeat(3, 310px);
     } 
 }
 @media (max-width: 1024px) {
@@ -522,22 +569,36 @@ header img {
 }
 
 .add-to-cart {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 1rem;
 }
 
 .add-to-cart button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
     font-weight: 600;
     height: 3rem;
     width: 100%;
-    border-radius: 0px 0px 8px 8px;
+    gap: 10px;
+    border-radius: 4px 4px 8px 8px;
     color: #ffffff;
+    border: none;
     background-color: rgb(75, 75, 75);
     font-family: 'Montserrat', sans-serif;
+}
+
+.add-to-cart button:hover {
+    background-color: rgb(69, 0, 109);
+}
+
+.add-to-cart button:focus {
+    background-color: rgb(192, 157, 0);
+}
+
+#cart-button {
+    height: 2rem;
+    filter: invert(1);
 }
 
 /* Box Marcas */
