@@ -16,6 +16,7 @@ body {
     max-width: 100%;
     width: 100%;
     overflow-x: hidden;
+    background-color: var(--primary-color);
 }
     
 
@@ -29,7 +30,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background: rgba(255, 255, 255);
+    background: var(--primary-color);
     filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
     z-index: 100;
     font-family: "inter";
@@ -46,7 +47,7 @@ header {
         width: 100%;
         justify-content: space-between;
         position: fixed;
-        background-color: #ffffff;
+        background-color: var(--primary-color);
         filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
         z-index: 100;
         font-family: "inter";
@@ -122,7 +123,7 @@ header img {
     font-size: 15px;
     text-align: center;
     align-items: center;
-    color: #3C3C3C;
+    color: var(--secondary-color);
     margin: 0 22px;
 }
 
@@ -144,7 +145,7 @@ header img {
     position: absolute;
     width: 200px;
     height: 100px;
-    background-color: rgb(75, 75, 75);
+    background-color: var(--secondary-color);
     border-radius: 0px 0px 10px 10px;
     border: 2px solid white;
 }
@@ -156,7 +157,7 @@ header img {
 
 .login a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--primary-color);
 }
 
 .login img {
@@ -206,10 +207,10 @@ header img {
     width: 400px;
     height: fit-content;
     padding-bottom: 20px;
-    background-color: rgb(75, 75, 75);
+    background-color: var(--secondary-color);
     overflow: hidden;
     border-radius: 0px 0px 5px 5px;
-    border: 2px solid rgba(255, 255, 255, 1);
+    border: 2px solid var(--primary-color);
     gap: 20px;
 }
 
@@ -222,10 +223,10 @@ header img {
     position: relative;
     justify-content: space-between;
     height: 6rem;
-    border: 5px solid white;
+    border: 5px solid var(--secondary-color);
     width: 22rem;
     border-radius: 5px;
-    background-color: white;
+    background-color: var(--primary-color);
     text-align: left;
 }
 
@@ -296,14 +297,95 @@ header img {
 
 /* Dark mode JS */
 
-.darkmode input {
-    display: none;
+:root {
+    --primary-color: #fff;
+    --secondary-color: rgb(57, 57, 57);
+    --third-color: #5d2fdf;
+    --fourth-colour: ##009790;
 }
 
-#ico-dark {
-    height: 50px;
-    padding: 10px;
+.dark-mode {
+    --primary-color: rgb(57, 57, 57);
+    --secondary-color: #fff;
+    
+}
+
+.dark-mode img {
+    filter: invert(1);
+}
+
+.dark-mode .dark-mode-logo{
+    filter: invert(0);
+}
+
+.dark-mode .filter {
+    background-color: var(--third-color);
+}
+
+.dark-mode .filter button{
+    filter: invert(1);
+    background-color: var(--secondary-color);
+}
+
+.dark-mode .filter button:hover{
+    background-color: #009790;
+}
+
+.dark-mode .filter button:focus{
+    background-color: #00fff2;
+}
+
+.dark-mode .caja-shop {
+    filter: invert(1);
+    border-color: #000000;
+}
+
+.dark-mode .caja-title {
+    color: var(--secondary-color);
+}
+
+.dark-mode .caja-categories span {
+    color: var(--secondary-color);
+}
+
+.dark-mode .caja-shop button {
+    filter: invert(1);
+    border-color: var(--secondary-color);
+}
+
+.dark-mode .cards-brands{
+    background-color: var(--third-color);
+}
+
+.dark-mode .cards-brands img {
+    filter: invert(0);
+}
+
+.dark-mode .title-compromise {
+    background-color: var(--fourth-colour);
+}
+
+.dark-mode .title-compromise h2 {
+    color: var(--secondary-color);
+}
+
+.dark-mode .review_1 img{
+    filter: invert(0)
+}
+
+.dark-mode .review_1 h3{
+    color: var(--secondary-color);
+}
+
+.dark-mode .review_1 p{
+    color: var(--secondary-color);
+}
+
+#toggle-dark-mode {
+    height: 30px;
+    padding: 1px;
     margin: 5px;
+    cursor: pointer;
 }
 
 /* ------------------------------------------------- */
@@ -411,7 +493,7 @@ header img {
     justify-content: space-evenly;
     height: 8rem;
     width: 100%;
-    background-color:#3C3C3C;
+    background-color: var(--secondary-color);
     margin-bottom: 20px;
     align-items: center;
     filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
@@ -423,7 +505,7 @@ header img {
     border: none;
     border-radius: 5px;
     background-color: #5d2fdf;
-    color: white;
+    color: var(--primary-color);
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
@@ -589,11 +671,11 @@ header img {
 }
 
 .add-to-cart button:hover {
-    background-color: rgb(69, 0, 109);
+    background-color: rgb(116, 0, 184);
 }
 
 .add-to-cart button:focus {
-    background-color: rgb(192, 157, 0);
+    background-color: rgb(0, 143, 226);
 }
 
 #cart-button {
