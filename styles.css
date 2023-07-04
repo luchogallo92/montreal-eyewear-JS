@@ -411,6 +411,13 @@ header img {
     filter: invert(0);
 }
 
+.dark-mode .hero-img{
+    background-image: url(./Assets/Banner/Banner-bg-3.jpg);
+}
+
+.dark-mode .type-effect h1{
+    color: var(--secondary-color);
+}
 
 
 #toggle-dark-mode {
