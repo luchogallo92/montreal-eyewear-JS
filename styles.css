@@ -3,12 +3,21 @@ html {
     scroll-padding: 40px;
 }
 
+
+
 /* GENERAL PPTES */
 *{
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: rgb(57, 57, 57);
+    --third-color: #5d2fdf;
+    --fourth-colour: ##009790;
 }
 
 body {
@@ -295,14 +304,7 @@ header img {
 
 
 
-/* Dark mode JS */
-
-:root {
-    --primary-color: #fff;
-    --secondary-color: rgb(57, 57, 57);
-    --third-color: #5d2fdf;
-    --fourth-colour: ##009790;
-}
+/*-------- Dark mode JS ----------*/
 
 .dark-mode {
     --primary-color: rgb(57, 57, 57);
@@ -380,6 +382,36 @@ header img {
 .dark-mode .review_1 p{
     color: var(--secondary-color);
 }
+
+.dark-mode .box-contacto-gral {
+    background-color: var(--third-color);
+}
+
+.dark-mode .pay-method{
+    filter: invert(1);
+}
+
+.dark-mode .pay-method h2{
+    filter: invert(1);
+}
+
+.dark-mode .mediaqueries-mobile-contact img{
+    filter: invert(0);
+}
+
+.dark-mode .articulos{
+    background-color: var(--third-color);
+}
+
+.dark-mode #cards-articulos img{
+    filter: invert(0);
+}
+
+.dark-mode .box-social-media img{
+    filter: invert(0);
+}
+
+
 
 #toggle-dark-mode {
     height: 30px;
@@ -773,7 +805,7 @@ header img {
     height: 450px;
     width: 100%;
     min-width: 75%;
-    background-color: rgb(57, 57, 57);
+    background-color: var(--secondary-color);
     margin-top: 10px;
     justify-content: space-around;
     color: #F5F5F5;
