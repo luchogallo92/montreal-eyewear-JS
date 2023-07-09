@@ -12,9 +12,21 @@ darkmode.addEventListener ('click', () =>{
     }
 });
 
+// Render Shoplist
+
+const shoplist = document.getElementById ("add-to-cart-button");
+
+    shoplist.addEventListener ('click', () =>{
+    alert ("Haz añadido el producto al carrito!");
+ 
+});
+
+// Render Boxes anteojos
+const renderdivscards = document.createElement ("div")
 
 
+const rendercards = document.querySelector (".boxes-shop")
 
-///////
-const cardanteojos = document.querySelector (".boxes-shop");
+rendercards.appendChild (renderdivscards)
+
 

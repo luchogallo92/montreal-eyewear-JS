@@ -24,8 +24,5 @@
  .caja-shop:hover {
   cursor: pointer;
   color: #ffffff;
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(20px);
-  background: rgb(255,255,255);
-  background: linear-gradient( 0deg, rgba(255,255,255,0) 60%, rgba(98,156,255,1) 100%); 
+  filter: drop-shadow(0 0 0.75rem rgb(207, 41, 74));
 }

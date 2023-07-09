@@ -102,7 +102,7 @@ width: 200px;
 height: 100px;
 background-color: var(--secondary-color);
 border-radius: 0px 0px 10px 10px;
-border: 2px solid white;
+border: 2px solid var(--primary-color);
 }
 
 .login-box li {
@@ -239,10 +239,10 @@ align-items: center;
 position: relative;
 justify-content: space-around;
 height: 4rem;
-border: 5px solid white;
+border: none;
 width: 22rem;
 border-radius: 5px;
-background-color: white;
+background-color: var(--primary-color);
 text-align: left;
 }
 
@@ -384,6 +384,38 @@ text-align: left;
     filter: invert(0);
 }
 
+.dark-mode .nav__container {
+    background-color: var(--primary-color);
+}
+
+.dark-mode .login-box {
+    background-color: var(--primary-color);
+}
+
+.dark-mode .shop-list {
+    filter: invert(0);
+    background-color: var(--primary-color);
+}
+
+.dark-mode .card-shop-list {
+    filter: invert(1);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+.dark-mode .shop-cart-actions {
+    filter: invert(1);
+}
+
+.dark-mode .shop-cart-actions img {
+    filter: invert(0);
+}
+
+.dark-mode .shop-total-items {
+    background-color: var(--secondary-color);
+}
+
 .dark-mode .filter {
     background-color: var(--third-color);
 }
@@ -402,8 +434,12 @@ text-align: left;
 }
 
 .dark-mode .caja-shop {
-    filter: invert(1);
+    filter: invert(0);
     border-color: var(--primary-color);
+}
+
+.dark-mode .caja-shop img {
+    filter: invert(0);
 }
 
 .dark-mode .caja-title {
@@ -415,8 +451,11 @@ text-align: left;
 }
 
 .dark-mode .caja-shop button {
-    filter: invert(1);
     border-color: var(--secondary-color);
+}
+
+.dark-mode .add-to-fav {
+    filter: invert(1);
 }
 
 .dark-mode .cards-brands{
@@ -479,8 +518,13 @@ text-align: left;
     background-image: url(./Assets/Banner/Banner-bg-3.jpg);
 }
 
-.dark-mode .type-effect h1{
-    color: var(--secondary-color);
+.dark-mode .type-effect h1 { 
+    color: #745ddf;
+    background-image: -webkit-linear-gradient(45deg, #745ddf 13%, #e91e63 87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
 }
 
 #toggle-dark-mode {
@@ -512,8 +556,6 @@ text-align: left;
 }
 
 .type-effect {
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgb(57, 57, 57);
     width: 15rem;
     height: 5rem;
 }
@@ -523,6 +565,8 @@ text-align: left;
     font-weight: 800;
     font-family: 'Montserrat', sans-serif; 
     width: 10rem;
+    color: var(--primary-color);
+    
 }
 
 .hero-img {
@@ -772,11 +816,11 @@ text-align: left;
 }
 
 .add-to-cart button:hover {
-    background-color: rgb(116, 0, 184);
+    background-color: var(--third-color);
 }
 
 .add-to-cart button:focus {
-    background-color: rgb(0, 143, 226);
+    background-color: rgb(207, 41, 74);
 }
 
 #cart-button {

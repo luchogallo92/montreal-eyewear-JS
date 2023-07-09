@@ -98,7 +98,7 @@
         margin-top: 315px;
         width: 100%;
         height: 260px;
-        background-color: var(--primary-color);
+        background-color: var(--secondary-color);
         border-radius: 5px;
     }
 
@@ -135,15 +135,14 @@
     .login-box {
         padding-top: 13px;
         flex-direction: column;
-        top: 56px;
-        right: 40px;
+        top: 40px;
+        right: 90px;
         text-align: center;
         gap: 30px;
-        float: left;
         position: absolute;
         width: 150px;
-        height: 110px;
-        background-color: rgb(75, 75, 75);
+        height: 150px;
+        background-color: var(--secondary-color);
         border-radius: 0px 0px 5px 5px;
     }
 
@@ -404,13 +403,13 @@
     /* Marcas */
 
     .cards-brands {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        width: 100%;
-        height: auto;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: auto auto auto;
+    }
+
+    .cards-brands img {
+        height: 100px;
     }
 
     /* Reviews */
