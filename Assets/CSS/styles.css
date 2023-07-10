@@ -3,8 +3,6 @@ html {
     scroll-padding: 40px;
 }
 
-
-
 /* GENERAL PPTES */
 *{
     padding: 0;
@@ -515,7 +513,7 @@ text-align: left;
 }
 
 .dark-mode .hero-img{
-    background-image: url(./Assets/Banner/Banner-bg-3.jpg);
+    background-image: url(../Banner/Banner-bg-3.jpg);
 }
 
 .dark-mode .type-effect h1 { 
@@ -525,6 +523,16 @@ text-align: left;
     -webkit-background-clip: text;
     -text-fill-color: transparent;
     -webkit-text-fill-color: transparent; 
+}
+
+.dark-mode #show-more {
+    color: var(--secondary-color);
+    border: 5px solid var(--third-color);
+    background-color: var(--third-color);
+}
+
+.dark-mode #show-more:hover {
+    background-color: rgb(207, 41, 74);
 }
 
 #toggle-dark-mode {
@@ -573,7 +581,7 @@ text-align: left;
     z-index: -2;
     height: 30rem;
     width: 100%;
-    background-image: url(./Assets/Banner/Banner-bg-2.jpg);
+    background-image: url(../Banner/Banner-bg-2.jpg);
     background-size: cover;
     position: static;
     margin-top: 80px;
@@ -827,6 +835,33 @@ text-align: left;
     height: 2rem;
     filter: invert(1);
 }
+
+/* Ver mas Boton */
+
+.show-more-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#show-more {
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin: 0 auto;
+    height: 3rem;
+    width: 15rem;
+    border: 5px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px 10px 0px 0px;
+}
+
+#show-more:hover {
+    background-color: var(--third-color);
+}
+
+
 
 /* Box Marcas */
 

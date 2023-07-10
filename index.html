@@ -7,11 +7,11 @@
     <title>Montreal Eyewear</title>
 
 <!-- link css -->
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./Assets/CSS/styles.css">
 <!-- link animations -->
-<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="./Assets/CSS/animations.css">
 <!-- Mediaqueries -->
-<link rel="stylesheet" href="mediaqueries.css">
+<link rel="stylesheet" href="./Assets/CSS/mediaqueries.css">
 
 <!--------------- Tipografias -------------------------->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,8 +38,7 @@
     <div class="nav__container">
          <ul class="navbar">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#2">Catalogo</a></li>
-            <li><a href="#3">Accesorios</a></li>
+            <li><a href="#3">Catalogo</a></li>
             <li><a href="#4">Marcas</a></li>
             <li><a href="#5">Servicios</a></li>
             <li><a href="#6">Sobre nosotros</a></li>
@@ -121,37 +120,22 @@
 
 <!-- Products Title -->
 <section class="filter" id="3">
-    <button id="filter-ant-sol">Sol</button>
-    <button id="filter-ant-receta">Receta</button>
-    <button id="filter-ant-aviador">Aviador</button>
-    <button id="filter-ant-lectura">Lectura</button>
-    <button id="filter-ant-mascara">Mascara</button>
-    <button id="filter-ant-accesorios">Accesorios</button>
+    <button id="filter-ant-todos">Todos</button>
+    <button id="filter-ant-sol" data-category="Sol">Sol</button>
+    <button id="filter-ant-receta" data-category="Receta">Receta</button>
+    <button id="filter-ant-aviador" data-category="Aviador">Aviador</button>
+    <button id="filter-ant-lectura" data-category="Lectura">Lectura</button>
+    <button id="filter-ant-mascara" data-category="Mascara">Mascara</button>
 </section> 
         
 
 <!-- SHOP Anteojos -->
 
 <section class="boxes-shop">
+</section>
 
-        <div class="caja-shop" id="ant-100">
-            <div class="box-shop-imagen">
-                <img src="./Assets/Anteojos/ant_ibiza.png" alt="">
-            </div>
-            <div class="caja-title">
-                <h2>Polaroid Ibiza</h2>
-                <p>Precio: $33.000</p>
-                <div class="caja-categories">
-                    <span>Lentes de sol</span>
-                </div>
-            </div>
-            <div class="add-to-fav">
-                <img src="./Assets/Iconos/fav.png" alt="">
-            </div>
-            <div class="add-to-cart">
-                <button id="add-to-cart-button">Agregar al carrito<img src="./Assets/Iconos/shop.png" alt="" id="cart-button"></button>
-            </div>
-        </div>
+<section class="show-more-button">
+    <button id="show-more">Ver mas</button>
 </section>
 
 <!-- Brands Title -->
@@ -298,6 +282,7 @@
         <h3>Optica Montreal Eyewear</h3>
     </div>
 </footer>
-    <script src="main.js"></script>
+    <script src="./Assets/JS/product_list.js"></script>
+    <script src="./Assets/JS/main.js"></script>
 </body>
 </html>

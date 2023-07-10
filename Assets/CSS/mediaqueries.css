@@ -302,7 +302,7 @@
         z-index: -2;
         height: 40vh;
         width: 100%;
-        background-image: url(./Assets/Banner/Banner-bg-2.jpg);
+        background-image: url(../Banner/Banner-bg-2.jpg);
         background-size: cover;
         position: static;
         background-position-x: center;
